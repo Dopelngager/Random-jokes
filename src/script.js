@@ -9,12 +9,16 @@ langs.forEach((el) =>
     if (e.target.id === "EN" && e.target.name !== "active") {
       e.target.name = "active";
       document.getElementById("RU").name = "";
+      document.getElementById("jokedata").style =
+        "font-family: 'Permanent Marker',sans-serif;";
       lang = "en";
       await switchLang();
     }
     if (e.target.id === "RU" && e.target.name !== "active") {
       e.target.name = "active";
       document.getElementById("EN").name = "";
+      document.getElementById("jokedata").style =
+        "font-family: 'Times New Roman', Times, serif;";
       lang = "ru";
       await switchLang();
     }
