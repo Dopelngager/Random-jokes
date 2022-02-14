@@ -1,0 +1,104 @@
+body {
+    display: flex;
+}
+
+.BAMF {
+    margin-top: 10px;
+    opacity: 1;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    transition: transform .1s ease-in-out;
+}
+
+.BAMF:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.BAMF:hover ~ .btn-text{
+    visibility: visible;
+}
+
+.btn-text {
+    font-size: 20pt;
+    color: red;
+    text-align: center;
+    visibility: hidden;
+    font-weight: bolder;
+}
+
+#jokedata {
+    font-family: 'Permanent Marker',sans-serif;
+    font-size: 2.5vmax;
+    justify-content: center;
+    line-height: 1.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.main {
+    height: 67%;
+    width: 100%;
+}
+
+.footer {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.date, .spanHref, .spanHref_rs {
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.footerGit, .footerRs {
+    float: left;
+    display: block;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.chack {
+    height: 23%;
+    width: 100%;
+    display: block;
+}
+
+.switch_lang {
+    text-align: right;
+    margin-right: 5%;
+}
+
+[name=active] {
+    text-decoration: underline;
+}
